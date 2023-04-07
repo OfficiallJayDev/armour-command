@@ -1,8 +1,8 @@
 Citizen.CreateThread(function()
-    RegisterCommand("armour", function() -- /amrour
+    RegisterCommand("armour", function() 
         while true do 
-        SetEntityArmour(GetPlayerPed(-1), 100) 
-            print(GetPedArmour(GetPlayerPed(-1))) ---@console.log 
-        Citizen.Wait(2000) -- dont change (in ms) 
+        SetEntityArmour(GetPlayerPed(), 100) 
+            print(GetPedArmour(GetPlayerPed())) 
+        Citizen.Wait(2000) 
     end)
 end)
